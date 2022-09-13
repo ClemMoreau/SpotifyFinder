@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SPOTIFY_FINDER_CONSTANT } from './config/env';
 
 function App() {
+  
+  useEffect(() => {
+    console.log(SPOTIFY_FINDER_CONSTANT);
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
