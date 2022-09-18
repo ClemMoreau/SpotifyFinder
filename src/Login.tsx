@@ -6,7 +6,7 @@ const Login = () => {
 
     return (
     <div>
-        <a href={SPOTIFY_LOGIN_URL}>Log in to Spotify</a>
+        <a href={SPOTIFY_LOGIN_URL}>Login to Spotify</a>
     </div>
     );
 } 

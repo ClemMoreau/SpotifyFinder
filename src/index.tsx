@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+window.Buffer = require('buffer/').Buffer;
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
