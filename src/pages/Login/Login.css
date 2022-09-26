@@ -1,0 +1,11 @@
+.background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 0;
+}
+
+.hint_title {
+    text-align: center;
+}
