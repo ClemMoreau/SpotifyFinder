@@ -2,11 +2,14 @@ import React from "react";
 import { useEffect } from "react";
 
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 import { SPOTIFY_FINDER_CONSTANT } from "../config/env";
 import SpotifyToken, { getTokenValidity } from "../types/Token";
 
 const RefreshToken = () => {
+    const history = useHistory();
+
     useEffect(() => {
         const refreshToken = async () => {
             const { refreshToken } = JSON.parse(
@@ -36,6 +39,7 @@ const RefreshToken = () => {
             window.localStorage.setItem("token", JSON.stringify(token));
         };
         refreshToken();
+        history.goBack();
     }, []);
 
     return <div></div>;

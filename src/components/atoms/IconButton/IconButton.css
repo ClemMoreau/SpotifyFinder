@@ -1,0 +1,20 @@
+.label-left, .label-right {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+    display: block;
+}
+
+.label-left {
+    text-align: left;
+}
+
+.label-right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 460px) {
+    
+    .label-left, .label-right {
+        display: none;
+    }
+}

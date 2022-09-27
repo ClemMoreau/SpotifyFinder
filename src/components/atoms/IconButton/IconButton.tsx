@@ -2,8 +2,8 @@ import React from "react";
 
 import styled from "@emotion/styled";
 
-import { FlexContainer } from "../containers/FlexContainer";
-import styleConfig from "../styleconfig";
+import { FlexContainer } from "../../containers/FlexContainer";
+import styleConfig from "../../styleconfig";
 
 export const IconButtonWithoutLabel = styled.button(() => ({
     minWidth: "32px",
