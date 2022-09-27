@@ -1,5 +1,5 @@
 const styleConfig = {
-    primaryColor: "#00d167",
+    primaryColor: "#00F253",
     buttonSizes: {
         sm: "15",
         md: "155",

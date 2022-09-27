@@ -42,7 +42,7 @@ const UserComponent = () => {
                 },
             };
             setCurrentUser(user);
-            console.log(userData);
+            console.log(data);
         };
         if (isTokenValid(token)) {
             getData();
@@ -62,13 +62,16 @@ const UserComponent = () => {
                         style={{
                             width: "25%",
                             position: "relative",
-                            right: "15%",
+                            margin: "32px",
                         }}
                         src={currentUser.iconURL}
                         alt="user-icon"
                     />
 
-                    <FlexContainer flexDirection="column">
+                    <FlexContainer
+                        flexDirection="column"
+                        style={{ minWidth: "30%" }}
+                    >
                         <div>
                             <h1 className="user-name">{currentUser.name}</h1>
                         </div>
@@ -78,7 +81,7 @@ const UserComponent = () => {
                             <span> Country : {currentUser.country}</span>
                         </FlexContainer>
                     </FlexContainer>
-                    <div>
+                    <div style={{ minWidth: "30%" }}>
                         <h3> Account type : {currentUser.accountType}</h3>
                         <a href={currentUser.url}>Spotify Profile</a>
                     </div>

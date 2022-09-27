@@ -39,6 +39,8 @@ const RefreshToken = () => {
             window.localStorage.setItem("token", JSON.stringify(token));
         };
         refreshToken();
+        console.log("Token resfreshed");
+
         history.goBack();
     }, []);
 

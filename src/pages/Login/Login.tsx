@@ -8,7 +8,7 @@ import logo from "../../asset/spotify.png";
 import { SPOTIFY_FINDER_CONSTANT } from "../../config/env";
 import SpotifyToken, { isTokenValid } from "../../types/Token";
 
-const SPOTIFY_LOGIN_URL = `https://accounts.spotify.com/authorize?client_id=${SPOTIFY_FINDER_CONSTANT.CLIENT.CLIENT_ID}&response_type=code&redirect_uri=${SPOTIFY_FINDER_CONSTANT.CLIENT.REDIRECT_URI}`;
+const SPOTIFY_LOGIN_URL = `https://accounts.spotify.com/authorize?client_id=${SPOTIFY_FINDER_CONSTANT.CLIENT.CLIENT_ID}&response_type=code&redirect_uri=${SPOTIFY_FINDER_CONSTANT.CLIENT.REDIRECT_URI}&scope=user-read-private user-read-email`;
 
 const Login = () => {
     const [showHint, setShowHint] = useState(false);
