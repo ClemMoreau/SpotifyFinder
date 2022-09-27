@@ -23,7 +23,9 @@ const Login = () => {
         if (token) {
             if (isTokenValid(token)) {
                 history.push("/profile");
-            } else {
+            }
+
+            if (token.refreshToken !== "") {
                 history.push("/refresh-token");
             }
         }
